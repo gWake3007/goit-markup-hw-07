@@ -19,6 +19,8 @@
   --white: #ffffff;
   /* MODAL BACKGROUND */
   --dairy: #fcfcfc;
+  /* HERO BACKGROUND */
+  --hero-back: rgba(46, 47, 66, 0.7);
   /* Transition, Duration ,Timing-Function */
   --transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -27,9 +29,7 @@ p,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   margin: 0;
 }
 
@@ -48,7 +48,10 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
 /* body */
 body {
   font-family: "Roboto", sans-serif;
@@ -57,6 +60,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--dark);
+  letter-spacing: 0.02em;
 }
 
 ul li {
@@ -64,15 +68,16 @@ ul li {
 }
 
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .body-studio {
@@ -92,7 +97,7 @@ section {
   display: flex;
 }
 
-/* Header */
+/* ========== Header  ==========*/
 .header {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -195,35 +200,31 @@ section {
   background-color: var(--dark);
 }
 
-
 /* HERO */
 
 .hero-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-color: var(--dark);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero_background/Dark-bg-desktop-1x.jpg);
+  background-image: linear-gradient(var(--hero-back), var(--hero-back)),
+    url(../images/hero_background/Dark-bg-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto auto;
+  background-size: cover;
+  text-align: center;
 }
 
 .site-title {
-  max-width: 496px;
-  margin: 0 auto;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
+  margin: 0 auto 72px;
+  max-width: 320px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   color: var(--white);
-  margin-bottom: 47px;
+  text-transform: capitalize;
 }
 
 .button-studio {
@@ -252,46 +253,27 @@ section {
 /* First-Section */
 
 .header-first-section {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   color: var(--dark);
   margin-bottom: 8px;
 }
 
-.first-section-li:not(:last-child) {
-  margin-right: 24px;
-}
-
-/* width264px */
-.first-section-li {
-  width: calc((100% - 72px) / 4);
+.first-section .list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .text-section {
-  letter-spacing: 0.02em;
-  font-size: 16px;
-}
-
-.first-section {
-  padding-bottom: 0;
-}
-
-.first-section-icon {
-  height: 64px;
-  width: 64px;
-  margin: 24px 100px;
+  font-weight: 500;
+  color: var(--text);
 }
 
 .first-section-div {
-  display: block;
-  height: 112px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background-color: var(--light);
-  background-repeat: no-repeat;
-  background-position: center;
+  display: none;
 }
 
 /* Second-Section */
@@ -313,14 +295,17 @@ section {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: var(--dark);
   margin-bottom: 72px;
 }
 
 .team-list-ul {
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 .team-list {
@@ -328,8 +313,7 @@ section {
 }
 
 .text-section-team {
-  letter-spacing: 0.02em;
-  font-size: 16px;
+  color: var(--text);
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -346,8 +330,6 @@ section {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark);
 }
 
 .social-media-links {
@@ -387,7 +369,7 @@ section {
 
 /* ========CUSTOMERS======== */
 
-/* width: 168px;
+/* width: 190px;
     height: 88px; */
 
 .icon-customers {
@@ -397,13 +379,14 @@ section {
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 72px 16px;
 }
 
 .customers-link {
   display: inline-block;
-  padding: 16px 32px;
+  padding: 16px 40px;
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
   fill: var(--subtle-text);
@@ -424,33 +407,32 @@ section {
   fill: var(--pressed-state);
 }
 
-/*========== footer ==========*/
+/*========== FOOTER ==========*/
 
 .footer-portfolio {
   background: var(--dark);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-portfolio .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .logo-footer {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  align-items: flex-start;
+  display: block;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primacy-brand);
-  width: 0;
 }
 
 .logo-footer-span {
@@ -459,19 +441,13 @@ section {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light);
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  width: 0;
 }
 
 .fot-logo-box {
-  width: 264px;
+  width: 268px;
 }
 
 .footer-info {
@@ -486,7 +462,6 @@ section {
 
 .box-social {
   width: 208px;
-  margin-left: 120px;
 }
 
 .name-social {
@@ -494,7 +469,9 @@ section {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   margin-bottom: 16px;
+  color: var(--white);
 }
 
 .fot-media-links {
@@ -527,19 +504,10 @@ section {
   background-color: var(--success);
 }
 
-.name-social {
-  color: var(--white);
-}
-
 .footer-form {
-  margin-left: 80px;
-}
-
-.footer-subscribe {
-  margin-left: auto;
   display: flex;
-  align-items: flex-end;
-  gap: 24px;
+  flex-direction: column;
+  align-self: stretch;
 }
 
 .footer-label {
@@ -548,6 +516,7 @@ section {
 }
 
 .subscribe-span {
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -557,7 +526,7 @@ section {
 }
 
 .input-footer {
-  width: 264px;
+  width: 100%;
   padding: 7px 16px;
   font-size: 12px;
   line-height: 2;
@@ -581,9 +550,12 @@ section {
 }
 
 .subscribe-button {
+  margin-top: 16px;
   height: 40px;
   width: 165px;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 8px 64px 8px 24px;
   justify-content: center;
   align-items: center;
@@ -771,7 +743,7 @@ section {
   border-color: var(--primacy-brand);
 }
 
-.checkbox{
+.checkbox {
   margin-bottom: 16px;
 }
 
@@ -818,13 +790,14 @@ section {
   justify-content: center;
   align-items: center;
   fill: transparent;
-  transition: background-color  var(--transition-duration), fill var(--transition-duration);
+  transition: background-color var(--transition-duration),
+    fill var(--transition-duration);
 }
 
-.check:checked + .checkbox-label span{
+.check:checked + .checkbox-label span {
   background-color: var(--pressed-state);
   border: none;
-  fill:var(--white);
+  fill: var(--white);
 }
 
 .modal-button {
@@ -892,7 +865,7 @@ section {
 
 .all-button:hover,
 .all-button:focus {
-  color: #ffffff;
+  color: var(--white);
   background-color: var(--pressed-state);
   border-color: var(--pressed-state);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
