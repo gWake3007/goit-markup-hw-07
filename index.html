@@ -25,39 +25,73 @@
   <body class="body-studio">
     <!---------- Header ---------->
     <header class="header">
-      <!-- nav -->
       <div class="container">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo link"
-            >Web<span class="logo-span link">Studio</span></a
-          >
-          <ul class="all-link-list list">
-            <li class="">
-              <a class="link-list hover-band link" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="">
-              <a class="link-list link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class=""><a class="link-list link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <!-- address -->
-        <address class="adress-portfolio">
-          <ul class="list link-adress">
-            <li class="">
-              <a class="address-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="">
-              <a class="address-link link" href="tel:+110001111111">
-                +11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <a href="./index.html" class="logo link"
+          >Web<span class="logo-span link">Studio</span></a
+        >
+        <button class="header-menu-icon" type="button">
+          <svg><use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
+        </button>
+        <div class="header-menu">
+          <button class="header-close-icon" type="button">
+            <svg><use href="./images/icons.svg#icon-close"></use></svg>
+          </button>
+          <!---------- nav ---------->
+          <nav class="header-nav">
+            <ul class="all-link-list list">
+              <li class="">
+                <a class="link-list hover-band link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="">
+                <a class="link-list link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class=""><a class="link-list link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <!-- address -->
+          <address class="adress-portfolio">
+            <ul class="list link-adress">
+              <li class="">
+                <a class="address-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="">
+                <a class="address-link link" href="tel:+110001111111">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="header-social-list">
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -475,7 +509,7 @@
       <div class="modal">
         <button type="button" data-modal-close class="close-modal">
           <svg class="icon-close-modal">
-            <use href="./images/icons.svg#icon-close-modal"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
