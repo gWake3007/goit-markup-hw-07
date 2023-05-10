@@ -22,19 +22,19 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <!-- Body -->
-  <body class="body-studio">
+  <body>
     <!---------- Header ---------->
     <header class="header">
       <div class="container">
         <a href="./index.html" class="logo link"
           >Web<span class="logo-span link">Studio</span></a
         >
-        <button class="header-menu-icon" type="button">
-          <svg><use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
+        <button class="header-menu-button" type="button" .js-open-menu>
+          <svg class="header-menu-icon"><use href="./images/icons.svg#icon-menu-hamburger"></use></svg>
         </button>
-        <div class="header-menu">
-          <button class="header-close-icon" type="button">
-            <svg><use href="./images/icons.svg#icon-close"></use></svg>
+        <div class="header-menu" .js-menu-container>
+          <button class="header-close-button" type="button" .js-close-menu>
+            <svg class="header-close-icon"><use href="./images/icons.svg#icon-close"></use></svg>
           </button>
           <!---------- nav ---------->
           <nav class="header-nav">
@@ -593,6 +593,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

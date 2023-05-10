@@ -15,6 +15,35 @@
       url(../images/hero_background/Dark-bg-mobile-2x.jpg);
   }
 }
+
+@media screen and (max-width: 767px){
+  /* ========== Header ========== */
+  .header .container{
+    padding-top: 24px;
+    padding-bottom: 22px;
+    justify-content: space-between;
+  }
+
+  .header-menu{
+    display: none;
+  }
+
+  .header-menu.is-open{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 80px 40px 40px;
+    justify-content: space-between;
+  }
+}
 /* ========== Tablet-Version ========== */
 
 @media screen and (min-width: 768px) {

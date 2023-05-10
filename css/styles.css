@@ -99,6 +99,93 @@ section {
 
 /* ========== Header  ==========*/
 .header {
+  position: relative;
+  border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+/* nav */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primacy-brand);
+}
+
+.logo-span {
+  color: var(--dark);
+}
+
+.header-menu-button{
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.header-menu-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+}
+
+.header-close-button{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: block;
+  margin-left: auto;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: background var(--transition-duration);
+}
+
+.header-close-icon{
+  height: 8px;
+  width: 8px;
+  transition: fill var(--transition-duration);
+}
+
+.header-close-button:focus,
+.header-close-button:hover {
+  background: var(--pressed-state);
+}
+
+.header-close-button:focus .header-close-icon,
+.header-close-button:hover .header-close-icon{
+  fill: var(--white);
+}
+
+.header-nav .link{
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+  transition: color var(--cubic);
+}
+
+.all-link-list {
+  gap: 40px;
+}
+
+
+/* .header {
   padding-bottom: 25px;
   padding-top: 25px;
   border-bottom: 1px solid var(--accent);
@@ -113,20 +200,10 @@ section {
 }
 
 /* nav */
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primacy-brand);
+/* .logo {
   margin-right: 147px;
 }
 
-.logo-span {
-  color: var(--dark);
-}
 
 .link-list {
   padding: 29px 0;
@@ -154,23 +231,16 @@ section {
   background-color: var(--pressed-state);
 }
 
-.all-link-list {
-  gap: 40px;
-}
-
 .header-nav {
   display: flex;
   align-items: center;
   margin-right: auto;
 }
 
-.header-block {
-  display: flex;
-}
 
 /* address */
 
-.address-link {
+/* .address-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -190,7 +260,7 @@ section {
 
 .link-adress {
   gap: 37px;
-}
+} */
 
 /* main */
 
