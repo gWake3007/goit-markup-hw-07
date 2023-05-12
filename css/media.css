@@ -16,25 +16,25 @@
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   /* ========== Header ========== */
-  .header .container{
+  .header .container {
     padding-top: 24px;
     padding-bottom: 22px;
     justify-content: space-between;
   }
 
-  .header-menu{
+  .header-menu {
     display: none;
   }
 
-  .header-menu.is-open{
+  .header-menu.is-open {
     display: flex;
     flex-direction: column;
     background-color: var(--light);
     position: fixed;
     overflow-y: scroll;
-    overflow-x:hidden;
+    overflow-x: hidden;
     top: 0;
     left: 0;
     bottom: 0;
@@ -42,8 +42,119 @@
     width: 100%;
     padding: 80px 40px 40px;
     justify-content: space-between;
+  }
+
+  .all-link-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .header-nav li {
+    margin-bottom: 40px;
+  }
+
+  .link-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .header-nav li:last-child .link-list {
+    color: var(--pressed-state);
+  }
+
+  .link-adress {
+    margin-bottom: 48px;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .address-link {
+    color: inherit;
+  }
+
+  .link-adress li:first-child {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text);
+    fill: var(--text);
+  }
+
+  .link-adress li:last-child {
+    font-weight: 700;
+    font-size: calc(21px + (36 - 21) * ((100vw - 320px) / (480 - 320)));
+    line-height: 1.11;
+    color: var(--primacy-brand);
+    fill: var(--primacy-brand);
+  }
+
+  .header-soc-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-social-list {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 56px;
+  }
+
+  .header-soc-item {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: var(--primacy-brand);
+    border: none;
+    border-radius: 50%;
+  }
+}
+
+/* -=== Specific mobile CSS ===- */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .link-adress li {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .link-adress li:last-child {
+    font-size: 21px;
+  }
+}
+
+/* ========== Modal-Mobile ========== */
+@media screen and (max-width: 419px) {
+  .modal {
+    position: relative;
+    padding: 64px 12px 24px;
+    max-width: 392px;
+    /* overflow-y: scroll; */
+    /* min-height: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .checkbox-label {
+    white-space: pre-wrap;
+  }
+}
+
+@media screen and (min-width: 420px) and (min-height: 600px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--transition-duration);
+  }
+
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.5);
   }
 }
 /* ========== Tablet-Version ========== */
@@ -167,7 +278,6 @@
   }
 
   /* ========== HEADER-DESKTOP ========== */
-
 
   /* ========== HERO-DESKTOP ========== */
 

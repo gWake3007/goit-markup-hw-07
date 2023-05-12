@@ -134,6 +134,7 @@ section {
 }
 
 .header-menu-icon{
+  fill: var(--dark);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,11 +178,19 @@ section {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
-  transition: color var(--cubic);
+  transition: color var(--transition-duration);
 }
 
 .all-link-list {
-  gap: 40px;
+  display: flex;
+}
+
+.header-soc-item{
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 
