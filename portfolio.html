@@ -19,44 +19,87 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <!-- body -->
   <body class="body-portfolio">
-    <!-- Header -->
+    <!---------- Header ---------->
     <header class="header">
-      <!-- nav -->
       <div class="container">
-        <nav class="header-nav">
-          <a href="./portfolio.html" class="logo link"
-            >Web<span class="logo-span link">Studio</span></a
+        <a href="./portfolio.html" class="logo link"
+          >Web<span class="logo-span link">Studio</span></a
+        >
+        <button class="header-menu-button js-open-menu" type="button">
+          <svg class="header-menu-icon">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <div class="header-menu js-menu-container">
+          <button
+            class="header-close-button js-close-menu"
+            type="button"
+            aria-label="Close menu"
           >
-          <ul class="all-link-list list">
-            <li class="">
-              <a class="link-list link" href="./index.html">Studio</a>
-            </li>
-            <li class="">
-              <a class="link-list hover-band link" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class=""><a class="link-list link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <!-- address -->
-        <address class="adress-portfolio">
-          <ul class="list link-adress">
-            <li class="">
-              <a class="address-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="">
-              <a class="address-link link" href="tel:+110001111111">
-                +11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+            <svg class="header-close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <!---------- nav ---------->
+          <nav class="header-nav">
+            <ul class="all-link-list list">
+              <li class="">
+                <a class="link-list link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="">
+                <a class="link-list hover-band link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class=""><a class="link-list link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <!-- address -->
+          <address class="adress-portfolio">
+            <ul class="list link-adress">
+              <li class="">
+                <a class="address-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="">
+                <a class="address-link link" href="tel:+110001111111">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <ul class="header-social-list">
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="header-soc-item">
+                <a href=""
+                  ><svg class="header-soc-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <!-- main -->
