@@ -381,6 +381,11 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
+
+  .link-list {
+    padding: 29px 0;
+  }
+
   /* ========== HERO-DESKTOP ========== */
 
   .hero-section {
