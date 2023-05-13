@@ -363,6 +363,24 @@
     padding-top: 25px;
   }
 
+
+  .logo{
+    margin-right: 76px;
+  }
+
+.all-link-list{
+  justify-content: flex-start;
+}
+
+  .link-adress {
+    flex-direction: row;
+  }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   /* ========== HERO-DESKTOP ========== */
 
   .hero-section {
