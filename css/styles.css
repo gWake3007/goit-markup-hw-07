@@ -108,6 +108,7 @@ section {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* nav */
@@ -125,25 +126,22 @@ section {
   color: var(--dark);
 }
 
-.header-menu-button{
-  position: relative;
-  width: 24px;
-  height: 24px;
+.header-menu-button {
+  padding: 0px;
+  margin-left: 238px;
+  width: 32px;
+  height: 22px;
   background-color: transparent;
   border: none;
 }
 
-.header-menu-icon{
-  fill: var(--dark);
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.header-menu-icon {
   width: 32px;
   height: 22px;
-  transform: translate(-50%, -50%);
+  stroke: var(--dark);
 }
 
-.header-close-button{
+.mobile-close-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -158,21 +156,31 @@ section {
   transition: background var(--transition-duration);
 }
 
-.header-close-icon{
+.mobile-close-icon {
   height: 8px;
   width: 8px;
   transition: fill var(--transition-duration);
 }
 
-.header-close-button:focus,
-.header-close-button:hover {
+.mobile-close-button:focus,
+.mobile-close-button:hover {
   background: var(--pressed-state);
 }
 
-.header-close-button:focus .header-close-icon,
-.header-close-button:hover .header-close-icon{
+.mobile-close-button:focus .header-close-icon,
+.mobile-close-button:hover .header-close-icon{
   fill: var(--white);
 }
+
+.header-soc-item{
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+} 
+
+/* 
 
 .header-nav .link{
   letter-spacing: 0.02em;
@@ -185,19 +193,7 @@ section {
   display: flex;
 }
 
-.header-soc-item{
-  display: inline-flex;
-  align-items: center;
-  font-style: normal;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+*/
 
 /* nav */
 /* .logo {
@@ -714,7 +710,7 @@ section {
 }
 
 .modal-form {
-  width: 360px;
+  width: 100%;
   padding-top: 16px;
 }
 
