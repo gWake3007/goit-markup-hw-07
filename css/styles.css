@@ -823,7 +823,7 @@ section {
   color: var(--primacy-brand);
 }
 
-.checkbox-label span {
+.checkbox-label .span-text {
   width: 16px;
   height: 16px;
   border-radius: 2px;
