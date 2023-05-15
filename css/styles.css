@@ -432,7 +432,6 @@ section {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 72px 16px;
 }
 
@@ -592,23 +591,14 @@ section {
 
 .footer-send-icon {
   display: inline-block;
-  position: absolute;
-  top: 8px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  fill: var(--white);
-  background-size: 32px;
+  margin-left: 16px;
 }
 
 .subscribe-button {
   margin-top: 16px;
   height: 40px;
   width: 165px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 8px 64px 8px 24px;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: var(--white);
